@@ -603,7 +603,7 @@ video {
 
   .shya {
     top: -130px;
-    right: 2%;
+    right: 40%;
     width: 80px;
     height: 80px;
   }
@@ -634,27 +634,27 @@ video {
   }
 
   .wpl {
-    font-size: 18vw;
+    font-size: 38vw;
     padding-left: 5vw;
   }
 
   .d1 {
-    width: 65px;
+    width: 105px;
     padding: 10px;
   }
 
   .d2 {
-    top: 30%;
+    top: 40%;
     left: 15%;
   }
 
   .d3 {
-    top: -40%;
+    top: -30%;
     left: 45%;
   }
 
   .d4 {
-    top: 30%;
+    top: 40%;
     left: 75%;
   }
 
