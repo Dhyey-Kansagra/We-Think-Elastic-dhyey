@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #0b0b0d;
   color: #e5be7b;
@@ -480,9 +485,251 @@ video {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
+
 .futer a {
   text-decoration: none;
   color: #ffffff;
 }
 
 /* .................................................. */
+
+
+@media (max-width: 1024px) {
+  .big {
+    font-size: 20vw;
+  }
+
+  .maintext {
+    font-size: 70px;
+  }
+
+  .wpl {
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .navbar nav a {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .logo {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .hero {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .big {
+    font-size: 20vw;
+    letter-spacing: -0.05em;
+  }
+
+  .sub {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .v1 {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .text {
+    padding: 0 15px;
+    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .maintext {
+    font-size: 12vw;
+    width: 100%;
+  }
+
+  .subtext {
+    position: static;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .shyaf {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .qwert {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .down {
+    margin-top: 0;
+  }
+
+  .shya {
+    top: -130px;
+    right: 2%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .shya .arrow {
+    font-size: 20px;
+  }
+
+  .ram img {
+    height: auto;
+    max-height: 400px;
+  }
+
+  .circal {
+    height: 200px;
+    width: 100%;
+  }
+
+  .dam {
+    width: 180px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  .jsam {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .wpl {
+    font-size: 18vw;
+    padding-left: 5vw;
+  }
+
+  .d1 {
+    width: 65px;
+    padding: 10px;
+  }
+
+  .d2 {
+    top: 30%;
+    left: 15%;
+  }
+
+  .d3 {
+    top: -40%;
+    left: 45%;
+  }
+
+  .d4 {
+    top: 30%;
+    left: 75%;
+  }
+
+  .s1 {
+    padding: 30px 15px;
+    width: 100%;
+  }
+
+  .c1 {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .m6 {
+    padding: 30px 15px;
+    width: 100%;
+  }
+
+  .l1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 10px;
+    width: 100%;
+  }
+
+  .log img {
+    max-width: 80px;
+  }
+
+  .hij {
+    font-size: 28px;
+  }
+
+  .yuij {
+    width: 160px;
+    height: 150px;
+    margin-top: 25px;
+  }
+
+  .folo {
+    font-size: 12vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer {
+    height: auto;
+    padding: 25px 15px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .futer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar nav {
+    display: none;
+  }
+
+  .big {
+    font-size: 22vw;
+  }
+
+  .l1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .folo {
+    font-size: 15vw;
+  }
+}
