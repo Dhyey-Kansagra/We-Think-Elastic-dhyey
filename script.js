@@ -1,3 +1,37 @@
+const svgs = document.querySelectorAll(".loader-svg");
+
+gsap.set(svgs, { opacity: 0, scale: 0.8 });
+
+const tl = gsap.timeline({ repeat: -1 });
+
+svgs.forEach((svg) => {
+  tl.to(svg, {
+    opacity: 1,
+    scale: 1,
+    duration: 0.1,
+    ease: "power2.out"
+  })
+  .to(svg, {
+    opacity: 0,
+    duration: 0.2,
+    ease: "power2.in"
+  });
+});
+
+
+window.addEventListener("load", () => {
+  gsap.to(".preloader", {
+    opacity: 0,
+    duration: 0,
+    delay: 1,
+    onComplete: () => {
+      document.querySelector(".preloader").style.display = "none";
+    }
+  });
+});
+
+// ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
 gsap.from(".navbar", {
   y: -80,
   opacity: 0,
