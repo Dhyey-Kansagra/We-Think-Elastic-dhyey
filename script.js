@@ -36,14 +36,16 @@ gsap.from(".navbar", {
   y: -80,
   opacity: 0,
   duration: 1,
-  ease: "power3.out"
+  ease: "power3.out",
+  delay: 1
 });
 // .......................................................
 gsap.from(".big", {
     y: 200,
     stagger: 0.1,
     duration: 1.2,
-    ease: "power4.out"
+    ease: "power4.out",
+    delay: 1
 });
 // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 gsap.registerPlugin(ScrollTrigger);
