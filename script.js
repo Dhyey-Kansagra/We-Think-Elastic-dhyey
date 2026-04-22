@@ -57,7 +57,8 @@ gsap.from(".v1 video", {
     trigger: ".v1",
     start: "top 50%",
     end: "top 40%",
-    scrub: 1
+    scrub: 3,
+    stagger: 2
   }
 });
 // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
